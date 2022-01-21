@@ -11,8 +11,8 @@ mb_language('uni');
 mb_regex_encoding('UTF-8');
 /*ob_start('mb_output_handler');*/
 ob_start();
-date_default_timezone_set('Europe/Rome');
-setlocale(LC_CTYPE, 'en_US'); //correct transliteration
+date_default_timezone_set('America/Sao_Paulo');
+setlocale(LC_CTYPE, 'pt_BR'); //correct transliteration
 
 /*
 |--------------------------------------------------------------------------
@@ -229,7 +229,7 @@ $config = array(
     | default language file name
     |--------------------------------------------------------------------------
     */
-    'default_language' => "en_EN",
+    'default_language' => "pt_BR",
 
     /*
     |--------------------------------------------------------------------------

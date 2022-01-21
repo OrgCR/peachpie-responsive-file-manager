@@ -18,10 +18,8 @@ namespace Microsoft.AspNetCore.Builder
         /// Installs ResponsiveFileManager middleware.
         /// </summary>
         /// <param name="app">The application builder.</param>
-        public static IApplicationBuilder UseResponsiveFileManager(this IApplicationBuilder app)
+        public static IApplicationBuilder UseResponsiveFileManager(this IApplicationBuilder app, string filemanagerPath = "/filemanager")
         {
-            const string filemanagerPath = "/filemanager";
-
             app.UseStaticFiles(new StaticFileOptions
             {
                 RequestPath = filemanagerPath,
